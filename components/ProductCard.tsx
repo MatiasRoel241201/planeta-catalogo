@@ -115,8 +115,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           )}
         </div>
 
-        <div className="flex-1 px-6 py-4">
-          <h4 className="font-semibold text-base text-gray-800 leading-snug group-hover:text-gray-900 transition-colors">
+        <div className="flex-1 px-6 py-4 overflow-hidden">
+          <h4 className="font-semibold text-base text-gray-800 leading-snug group-hover:text-gray-900 transition-colors line-clamp-2 break-all max-w-full">
            {product.name}
           </h4>
           <p className="text-xs text-gray-500 uppercase">{product.category}</p>
